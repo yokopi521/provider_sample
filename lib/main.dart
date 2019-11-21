@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  final String data = 'Top data';
+  final String data = 'Top data!';
   @override
   Widget build(BuildContext context) {
     return Provider<String>(
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: Container(),
+            title: Text(data),
           ),
           body: Level1(),
         ),
@@ -33,7 +33,7 @@ class Level1 extends StatelessWidget {
 class Level2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Level3();
   }
 }
 
